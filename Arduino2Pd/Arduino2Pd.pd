@@ -1,0 +1,25 @@
+#N canvas 1 77 547 365 12;
+#X msg 120 155 start;
+#X msg 170 155 stop;
+#X msg 214 155 devices;
+#X floatatom 129 268 5 0 0 0 - - -, f 5;
+#X obj 129 224 ArduinoSerial -------;
+#X floatatom 157 298 5 0 0 0 - - -, f 5;
+#X floatatom 186 268 5 0 0 0 - - -, f 5;
+#X floatatom 215 298 5 0 0 0 - - -, f 5;
+#X floatatom 244 267 5 0 0 0 - - -, f 5;
+#X floatatom 273 301 5 0 0 0 - - -, f 5;
+#X text 317 156 when "start" message is sent \; you have to wait 2.5
+seconds \; before you receive data from \; Arduino \;;
+#X text 49 41 "ArduinoSerial" abstraction is setted up to work with
+Arduino Uno (6 analog inputs) \, but it is easy to set it to work with
+any number of analog inputs \;;
+#X connect 0 0 4 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 4 1 5 0;
+#X connect 4 2 6 0;
+#X connect 4 3 7 0;
+#X connect 4 4 8 0;
+#X connect 4 5 9 0;
