@@ -1,0 +1,13 @@
+//--------------------------------------------------COMPRESSOR UNITS---------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+//----------------------------------Mario Buoninfante - mario.buoninfante@gmail.com------------------------------
+//---------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------2015-----------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+
+
+this is a collection of externals made with Faust Programming Language (http://faust.grame.fr/). the three exernals are the units that are part of a compressor (level measuration/static curve/smoother - the names that I used are respectively: "level" - "staticcurve" - "inseguitore"). in these way it's possible to use them to build a compressor of course, but also you can use them individually and/or use them in a different way.
+
+in the folder there's also a paper from BBC Research "G.W. McNally - dynamic range control of digital audio signals"; it could be useful to understand what is the work of each unit.
+
+the file ".dsp" are the source files in Faust and can be used to compile the object for different OS and different programming language and/or environment.
