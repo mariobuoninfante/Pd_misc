@@ -1,0 +1,14 @@
+#N canvas 55 254 671 421 10;
+#X obj 41 139 print_2;
+#X symbolatom 41 107 15 0 0 2 symbol - -;
+#X floatatom 40 32 5 0 0 2 float - -;
+#X obj 40 52 print_2;
+#X obj 40 302 print_2;
+#X obj 40 269 list;
+#X text 46 202 send a list;
+#X msg 40 228 the size of the object goes in accord with the length
+of the list/symbol;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 5 0 4 0;
+#X connect 7 0 5 0;
