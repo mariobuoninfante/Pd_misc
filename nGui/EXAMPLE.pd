@@ -1,0 +1,9 @@
+#N canvas 263 1189 930 449 12;
+#X obj 511 19 nPreset 0;
+#X obj 59 106 nSlider test 0;
+#X obj 39 160 nToggle switch 0;
+#X obj 248 221 nSlider t2 0 10 25;
+#X obj 72 238 nVertSlider three 0;
+#X obj 290 314 nNumbox nr 0;
+#X msg 72 194 range 0 1100;
+#X connect 6 0 4 0;
