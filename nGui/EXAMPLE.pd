@@ -1,9 +1,20 @@
-#N canvas 263 1189 930 449 12;
-#X obj 511 19 nPreset 0;
-#X obj 59 106 nSlider test 0;
-#X obj 39 160 nToggle switch 0;
-#X obj 248 221 nSlider t2 0 10 25;
-#X obj 72 238 nVertSlider three 0;
-#X obj 290 314 nNumbox nr 0;
-#X msg 72 194 range 0 1100;
-#X connect 6 0 4 0;
+#N canvas 263 1189 875 568 12;
+#X obj 485 106 nPreset 0;
+#X text 618 105 <<< preset with unique id 0 \;;
+#X obj 35 45 nToggle bypass 0;
+#X text 152 43 <<< [nToggle bypass 0] \; --- 1st arg: name \; --- 2nd
+arg: nPreset id \;;
+#X obj 35 159 nSlider volume 0 -100 6;
+#X text 174 157 <<< [nSlider volume 0 -100 6] \; --- 1st arg: name
+\; --- 2nd arg: nPreset id \; --- 3rd arg: range min \; --- 4th arg:
+range max \;;
+#X obj 35 450 nNumbox panpot 0 -100 100;
+#X text 142 454 <<< [nNumbox volume 0 -100 6] \; --- 1st arg: name
+\; --- 2nd arg: nPreset id \; --- 3rd arg: range min \; --- 4th arg:
+range max \;;
+#X text 115 260 <<< [nVertSlider] \; --- same as [nSlider] \;;
+#X msg 485 35 save 10;
+#X msg 495 65 load 5;
+#X obj 35 262 nVertSlider send_1 0;
+#X connect 9 0 0 0;
+#X connect 10 0 0 0;

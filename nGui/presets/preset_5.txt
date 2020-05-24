@@ -1,0 +1,4 @@
+bypass 1;
+volume 2;
+panpot -35;
+send_1 18.11;

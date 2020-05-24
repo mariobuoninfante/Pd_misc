@@ -1,5 +1,9 @@
 2020-05-24
 ---
+## CHANGED
+  - fixed range issue in GUI elements
+  - nGui - added EXAMPLE.pd
+
 ## ADDED
   - nGui - GUI preset library
 

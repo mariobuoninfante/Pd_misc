@@ -1,4 +1,4 @@
-#N canvas 673 1266 627 263 12;
+#N canvas 673 1266 851 263 12;
 #X obj 443 141 text define \$0_DATA;
 #N canvas 682 1246 634 555 GUI_TO_PRESET 0;
 #X obj 81 361 t a b;
@@ -94,20 +94,25 @@
 #X obj 29 120 bng 15 250 50 0 \$0_from_g_load \$0_to_g_load load 17
 7 0 10 -260097 -1 -1;
 #X obj 443 53 r \$0_to_text;
-#X obj 135 22 inlet;
-#X obj 135 47 route save load nr;
-#X obj 217 87 s \$0_to_g_preset_nr;
+#X obj 175 22 inlet;
+#X obj 258 107 s \$0_to_g_preset_nr;
 #X obj 99 120 bng 15 250 50 0 \$0_from_g_open \$0_to_g_open open 17
 7 0 10 -191407 -1 -1;
 #X obj 453 83 r \$0_from_g_open;
 #X msg 453 108 click;
 #X obj 26 76 cnv 15 118 18 empty empty id:\$1 1 9 0 12 -260097 -66577
 0;
+#X obj 226 73 t b f;
+#X obj 175 47 route save load;
+#X obj 175 73 t b f;
 #X connect 6 0 0 0;
-#X connect 7 0 8 0;
-#X connect 8 0 3 0;
-#X connect 8 1 5 0;
-#X connect 8 2 9 0;
-#X connect 11 0 12 0;
-#X connect 12 0 0 0;
+#X connect 7 0 14 0;
+#X connect 10 0 11 0;
+#X connect 11 0 0 0;
+#X connect 13 0 5 0;
+#X connect 13 1 8 0;
+#X connect 14 0 15 0;
+#X connect 14 1 13 0;
+#X connect 15 0 3 0;
+#X connect 15 1 8 0;
 #X coords 0 -1 1 1 120 105 2 25 75;
