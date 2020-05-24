@@ -1,6 +1,5 @@
 #N canvas 263 1189 875 568 12;
 #X obj 485 106 nPreset 0;
-#X text 618 105 <<< preset with unique id 0 \;;
 #X obj 35 45 nToggle bypass 0;
 #X text 152 43 <<< [nToggle bypass 0] \; --- 1st arg: name \; --- 2nd
 arg: nPreset id \;;
@@ -16,5 +15,6 @@ range max \;;
 #X msg 485 35 save 10;
 #X msg 495 65 load 5;
 #X obj 35 262 nVertSlider send_1 0;
+#X text 618 105 <<< [nPreset 0] \; --- 1st arg: unique id \;;
+#X connect 8 0 0 0;
 #X connect 9 0 0 0;
-#X connect 10 0 0 0;
