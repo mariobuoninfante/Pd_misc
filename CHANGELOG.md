@@ -1,3 +1,13 @@
+2020-05-2
+---
+## CHANGED
+  - nGui - nPreset queries GUI objects when saving instead of having them constantly sending their value
+  - nGui/nPreset - added 'loadprev' and 'loadnext' methods 
+
+## ADDED
+  - nGui - added README.md
+
+
 2020-05-24
 ---
 ## CHANGED
